@@ -1,0 +1,96 @@
+/* new-style.css */
+
+/* Reset de estilos y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cambio a la fuente Poppins */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+h1.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2800db;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animación para el título */
+h1.title::before {
+  content: 'ORDINARIO MIKE Y ARMANDO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  animation: reveal 5s linear infinite;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: #333;
+  }
+  100% {
+    width: 0;
+    color: transparent;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .box-img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-img {
+    width: calc(100% - 20px);
+  }
+}

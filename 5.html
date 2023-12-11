@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MINI paint juan</title>
+  <style>
+    /* Estilos CSS */
+    /* new-style.css */
+
+/* Reset de estilos y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cambio a la fuente Poppins */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+h1.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2800db;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animación para el título */
+h1.title::before {
+  content: 'ORDINARIO MIKE Y ARMANDO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  animation: reveal 5s linear infinite;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: #333;
+  }
+  100% {
+    width: 0;
+    color: transparent;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .box-img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-img {
+    width: calc(100% - 20px);
+  }
+}
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1.5rem;
+      background-color: #00A2AF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #00777f;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">MINI pain juan</h1>
+  <h2 class="subtitle">Descripción de la Aplicación</h2>
+  <p>Esta aplicación consta de un lienzo en blanco donde puedes dar rienda suelta a tu creatividad. Ofrece diferentes herramientas como pinceles con varios colores y grosores para dibujar, así como la opción de reiniciar el lienzo.</p>
+  
+  <h3>Uso de la Aplicación</h3>
+  <p>Para empezar a crear, selecciona el pincel y el color que desees. Utiliza el lienzo en blanco para plasmar tus ideas o dibujar lo que desees. Si quieres empezar de nuevo, puedes reiniciar el lienzo con el botón correspondiente.</p>
+
+  <h3>Herramientas Disponibles</h3>
+  <p>Esta aplicación proporciona las siguientes herramientas:</p>
+  <ul>
+    <li><strong>Lienzo en blanco:</strong> Espacio para dibujar o crear.</li>
+    <li><strong>Pinceles:</strong> Diferentes tamaños y colores para dibujar.</li>
+    <li><strong>Botón de reinicio:</strong> Reinicia el lienzo a su estado inicial.</li>
+  </ul>
+
+  <h3>Descargar y Utilizar la Aplicación</h3>
+  <p>Puedes descargar la aplicación haciendo clic en el siguiente botón:</p>
+
+  <p>Una vez descargada, explora las herramientas disponibles y da rienda suelta a tu imaginación utilizando el lienzo en blanco y los pinceles provistos.</p>
+
+  
+  <center>
+    <img src="EVIDENCIA/5.jpeg"width="20%">
+  </center>
+  
+  <center>
+    <a href="https://drive.google.com/file/d/1BrdFtNDqfwQauyAY3emNjKSI_wH6iuDb/view?usp=sharing" class="button">APk</a>
+    <br>
+    <a href="https://gallery.appinventor.mit.edu/?galleryid=f6cb6ca6-16c1-4504-bfbf-6042b537631b" class="button">Galería</a><!-- Otros botones o enlaces relacionados con la aplicación -->
+  </center>
+</body>
+</html>

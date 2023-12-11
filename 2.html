@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentación de mi Aplicación de Índice de Masa Corporal (IMC)</title>
+  <style>
+    /* Estilos CSS */
+   /* new-style.css */
+
+/* Reset de estilos y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cambio a la fuente Poppins */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+h1.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2800db;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animación para el título */
+h1.title::before {
+  content: 'Documentación de mi Aplicación de Índice de Masa Corporal (IMC)';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  animation: reveal 5s linear infinite;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: #333;
+  }
+  100% {
+    width: 0;
+    color: transparent;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .box-img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-img {
+    width: calc(100% - 20px);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1 class="title">Documentación de mi Aplicación de Índice de Masa Corporal (IMC)</h1>
+  <h2 class="subtitle">¿Qué es el Índice de Masa Corporal (IMC)?</h2>
+  <p>El Índice de Masa Corporal (IMC) es una medida que evalúa la relación entre el peso y la altura de una persona. Esta aplicación utiliza esta fórmula para determinar el estado de peso de un individuo.</p>
+  
+  <h3>Cálculo del IMC</h3>
+  <p>El IMC se calcula dividiendo el peso (en kilogramos) entre la altura al cuadrado (en metros). La fórmula es:</p>
+  <p>IMC = peso / (altura * altura)</p>
+
+  <h3>Interpretación del IMC</h3>
+  <p>Según el valor del IMC obtenido, se clasifica en diferentes categorías:</p>
+  <ul>
+    <li><strong>Bajo peso:</strong> IMC menor a 18.5</li>
+    <li><strong>Peso normal:</strong> IMC entre 18.5 y 24.9</li>
+    <li><strong>Sobrepeso:</strong> IMC entre 25 y 29.9</li>
+    <li><strong>Obesidad:</strong> IMC de 30 o superior</li>
+  </ul>
+
+  <h3>Uso de la Aplicación</h3>
+  <p>Para utilizar la aplicación, introduce tu peso en kilogramos y tu altura en metros. La aplicación calculará tu IMC y te indicará en qué categoría de peso te encuentras.</p>
+  
+  <h3>Consejos para Mantener un Peso Saludable</h3>
+  <p>Mantener un peso saludable es importante para tu bienestar. Aquí hay algunos consejos generales:</p>
+  <ul>
+    <li><strong>Dieta balanceada:</strong> Consume una dieta equilibrada y variada.</li>
+    <li><strong>Ejercicio regular:</strong> Realiza actividad física de forma regular.</li>
+    <li><strong>Control médico:</strong> Visita a un médico para un seguimiento regular de tu salud.</li>
+    <li><strong>Descanso adecuado:</strong> Asegúrate de dormir lo suficiente para una óptima salud.</li>
+  </ul>
+  
+  <h3>Descargar y Utilizar la Aplicación</h3>
+  <p>Puedes descargar la aplicación haciendo clic en el siguiente botón:</p>
+
+  <p>Una vez descargada, sigue las instrucciones dentro de la app para calcular tu IMC y obtener información sobre tu estado de peso.</p>
+
+  <h3>Información Adicional</h3>
+  <p>Para más detalles sobre cómo utilizar la aplicación o información técnica adicional, puedes visitar nuestra página de soporte <a href="#" style="color: #00A2AF; text-decoration: underline;">aquí</a>.</p>
+  <center>
+    <img src="EVIDENCIA/2.jpeg"width="20%">
+  </center>
+  
+  <center>
+    <a href="https://drive.google.com/file/d/1npDT90pGHgy9e3VNJeye2VD-HOIFpHwq/view?usp=sharing" class="button">APk</a><!-- Otros botones o enlaces relacionados con la aplicación -->
+    <br>
+    <a href="https://gallery.appinventor.mit.edu/?galleryid=f567128a-1c73-4bc8-b564-9d864cc87ea5" class="button">galeria</a><!-- Otros botones o enlaces relacionados con la aplicación -->
+  </center>
+</body>
+</html>

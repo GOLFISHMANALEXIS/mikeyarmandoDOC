@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentación de mi Aplicación Calculadora</title>
+  <style>
+    /* Estilos CSS */
+    /* ... (los estilos se mantienen iguales) ... */
+    /* new-style.css */
+
+/* Reset de estilos y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cambio a la fuente Poppins */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+h1.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2800db;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animación para el título */
+h1.title::before {
+  content: 'ORDINARIO MIKE Y ARMANDO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  animation: reveal 5s linear infinite;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: #333;
+  }
+  100% {
+    width: 0;
+    color: transparent;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .box-img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-img {
+    width: calc(100% - 20px);
+  }
+}
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1.5rem;
+      background-color: #00A2AF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #00777f;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Documentación de mi Aplicación Calculadora</h1>
+  <h2 class="subtitle">Características de la Calculadora</h2>
+  <p>Esta aplicación de calculadora incluye las siguientes operaciones matemáticas: suma, resta, multiplicación, división, potencia y raíz cuadrada. Calcula los resultados exactos utilizando fórmulas definidas en bloques de código.</p>
+  
+  <h3>Operaciones Matemáticas</h3>
+  <p>La calculadora realiza las siguientes operaciones:</p>
+  <ul>
+    <li><strong>Suma:</strong> Suma dos números.</li>
+    <li><strong>Resta:</strong> Resta el segundo número del primero.</li>
+    <li><strong>Multiplicación:</strong> Multiplica dos números.</li>
+    <li><strong>División:</strong> Divide el primer número por el segundo.</li>
+    <li><strong>Potencia:</strong> Calcula la potencia de un número.</li>
+    <li><strong>Raíz cuadrada:</strong> Obtiene la raíz cuadrada de un número.</li>
+  </ul>
+
+  <h3>Resultado</h3>
+  <p>Los resultados de las operaciones se muestran numéricamente en el bloque de pantalla de la aplicación.</p>
+
+  <h3>Uso de la Aplicación</h3>
+  <p>Para utilizar la calculadora, selecciona la operación deseada e ingresa los números correspondientes. El resultado exacto se mostrará en el bloque de pantalla de la aplicación.</p>
+  
+  <h3>Descargar y Utilizar la Aplicación</h3>
+  <p>Puedes descargar la aplicación haciendo clic en el siguiente botón:</p>
+
+  <p>Una vez descargada, sigue las instrucciones dentro de la app para realizar cálculos precisos utilizando las diferentes operaciones disponibles.</p>
+
+  <center>
+    <img src="EVIDENCIA/4.jpeg"width="20%">
+  </center>
+  
+  
+  <center>
+    <a href="https://drive.google.com/file/d/18M0pz-KsPc3MZI9t6OJ79FlAg3LvfSpS/view?usp=sharing" class="button">APK</a>
+    <br>
+    <a href="https://gallery.appinventor.mit.edu/?galleryid=f567128a-1c73-4bc8-b564-9d864cc87ea5" class="button">Galería</a><!-- Otros botones o enlaces relacionados con la aplicación -->
+  </center>
+</body>
+</html>

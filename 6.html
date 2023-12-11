@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentación de mi Aplicación Podómetro</title>
+  <style>
+    /* Estilos CSS */
+    /* new-style.css */
+
+/* Reset de estilos y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cambio a la fuente Poppins */
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+h1.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2800db;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animación para el título */
+h1.title::before {
+  content: 'ORDINARIO MIKE Y ARMANDO';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: transparent;
+  animation: reveal 5s linear infinite;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: #333;
+  }
+  100% {
+    width: 0;
+    color: transparent;
+  }
+}
+
+.container-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box-img {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .box-img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .box-img {
+    width: calc(100% - 20px);
+  }
+}
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1.5rem;
+      background-color: #00A2AF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #00777f;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Documentación de mi Aplicación Podómetro</h1>
+  <h2 class="subtitle">¿Qué es un Podómetro?</h2>
+  <p>Un Podómetro es un dispositivo o aplicación que mide la distancia recorrida por una persona al caminar o correr. Esta aplicación realiza mediciones en metros y utiliza el módulo GPS para ello.</p>
+  
+  <h3>Funcionalidades de la Aplicación</h3>
+  <p>Esta aplicación de Podómetro incluye las siguientes funciones:</p>
+  <ul>
+    <li><strong>Medición de Distancia:</strong> Registra la distancia recorrida en metros.</li>
+    <li><strong>Integración de Mapa:</strong> Utiliza el módulo GPS para mostrar un mapa con la ubicación actual.</li>
+    <li><strong>Botones:</strong> La aplicación cuenta con botones de inicio, reinicio y cambio a la vista de mapa.</li>
+  </ul>
+
+  <h3>Uso de la Aplicación</h3>
+  <p>Para usar la aplicación de Podómetro, inicia la medición presionando el botón de inicio. Puedes reiniciar la medición con el botón de reinicio y cambiar a la vista de mapa con el botón correspondiente.</p>
+  
+  <h3>Consejos para una Medición Precisa</h3>
+  <p>Para obtener mediciones precisas con el Podómetro, considera lo siguiente:</p>
+  <ul>
+    <li><strong>Buena Recepción GPS:</strong> Utiliza la aplicación en áreas con buena recepción satelital para una medición más precisa.</li>
+    <li><strong>Calibración:</strong> Calibra el dispositivo si es necesario para mejorar la precisión de la medición.</li>
+    <li><strong>Condiciones de Uso:</strong> Camina o corre en terrenos planos y estables para mediciones más precisas.</li>
+  </ul>
+  
+  <h3>Descargar y Utilizar la Aplicación</h3>
+  <p>Puedes descargar la aplicación de Podómetro haciendo clic en el siguiente botón:</p>
+
+  <p>Una vez descargada, sigue las instrucciones dentro de la app para comenzar a medir la distancia y acceder a la vista del mapa.</p>
+  <center>
+    <img src="EVIDENCIA/6.jpeg"width="20%">
+  </center>
+  
+  <center>
+    <a href="https://drive.google.com/file/d/1-MnoQMqq5BLbsk7fzPrjfwSPBT7o5MoW/view?usp=sharing" class="button">APk</a>
+    <br>
+    <a href="URL_DE_DESCARGA_APLICACION" class="button">Enlace de Descarga</a><!-- Reemplaza 'URL_DE_DESCARGA_APLICACION' con el enlace real de descarga -->
+  </center>
+</body>
+</html>
